@@ -8,6 +8,7 @@ public class App {
     static String texto;
     static boolean validarTexto;
     static boolean logo;
+
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
@@ -25,9 +26,9 @@ public class App {
             while (!salgo) {
                 System.out.println("----------------------------");
                 System.out.println("1) poner titulo");
-                System.out.println("2. escribir texto");
-                System.out.println("3. poner logo de java");
-                System.out.println("4. Salir");
+                System.out.println("2) escribir texto");
+                System.out.println("3) poner logo de java");
+                System.out.println("4) Salir");
                 System.out.println("----------------------------");
                 System.out.println("Escribe una de las opciones");
                 System.out.println("----------------------------");
