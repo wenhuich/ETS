@@ -17,16 +17,37 @@ public class GenerarDocumento {
 
             PDPageContentStream contentStream = new PDPageContentStream(document, page);
 
-            // Text
-            contentStream.beginText();
-            contentStream.setFont(PDType1Font.TIMES_BOLD, 32);
-            contentStream.newLineAtOffset( 20, page.getMediaBox().getHeight() - 52);
-            contentStream.showText("Hello World!");
-            contentStream.endText();
+            // Titulo
+            if (App.validarTitulo == true){
+                contentStream.beginText();
+                contentStream.setFont(PDType1Font.TIMES_BOLD, 32);
+                contentStream.newLineAtOffset( 20, page.getMediaBox().getHeight() - 52);
+                contentStream.showText(App.titulo);
+                contentStream.endText();
+            }
+
+            // Texto
+            if (App.validarTexto == true){
+                contentStream.beginText();
+                contentStream.setFont(PDType1Font.TIMES_BOLD, 12);
+                contentStream.newLineAtOffset( 20, page.getMediaBox().getHeight() - 95);
+                contentStream.showText(App.texto);
+                contentStream.endText();
+            }
+            /*
+                contentStream.beginText();
+                contentStream.setFont(PDType1Font.TIMES_BOLD, 12);
+                contentStream.newLineAtOffset( 20, page.getMediaBox().getHeight() - 110);
+                contentStream.showText(App.texto);
+                contentStream.endText();
+                */
 
             // Image
-            PDImageXObject image = PDImageXObject.createFromByteArray(document, App.class.getResourceAsStream("/java.png").readAllBytes(), "Java Logo");
-            contentStream.drawImage(image, 20, 20, image.getWidth() / 3, image.getHeight() / 3);
+            if (App.logo == true){
+                PDImageXObject image = PDImageXObject.createFromByteArray(document, App.class.getResourceAsStream("/java.png").readAllBytes(), "Java Logo");
+                contentStream.drawImage(image, 20, 20, image.getWidth() / 3, image.getHeight() / 3);
+            }
+            
 
             contentStream.close();
 
