@@ -34,11 +34,11 @@ body {
     text-align: center;
 }
 
-.main {
+#main {
     width: 100%;
 }
 
-.main_center {
+#main .main_center {
     width: 310px;
     height: 235px;
     margin: 0 auto;
