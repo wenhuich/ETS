@@ -1,156 +1,248 @@
-@charset "utf-8";
-
-/* CSS Document */
-
-body {
-    background-color: white;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-    line-height: 1.5;
-    color: #24292e;
-}
-
-.top {
-    width: 100%;
-}
-
-.top_center {
-    width: 310px;
-    height: 150px;
-    margin: 0 auto;
-}
-
-.logo {
-    width: 200px;
-    height: 120px;
-    margin: 0 auto;
-}
-
-.welcome {
-    width: 310;
-    margin: 0px auto;
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    text-align: center;
-}
-
-.main {
-    width: 100%;
-}
-
-.main_center {
-    width: 310px;
-    height: 235px;
-    margin: 0 auto;
-    background-color: #FFF;
-    border: 1px solid #d8dee2;
-    border-radius: 5px;
-    padding: 20px;
+* {
     box-sizing: border-box;
 }
 
-.main_username {
-    width: 100%;
-    height: 30px;
+html {
+    scroll-behavior: smooth;
 }
 
-.word {
-    font-size: 16px;
-    font-weight: 700;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: red;
+}
+
+h2 {
+    font-size: 2.7em;
+    color: red;
+
+}
+
+h3 {
+    font-size: 2em;
+    color: purple;
+}
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chartreuse
+    ;
+}
+
+
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    color: azure;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+#header {
+    background-color: rgb(245, 245, 245);
+}
+
+#header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+#header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
     color: black;
 }
 
-.float_l {
-    float: left;
+#header a:hover {
+    color: blueviolet;
 }
 
-.float_r {
-    float: right;
-}
-
-.main_input,
-.main_login {
-    width: 100%;
-    height: 40px;
-}
-
-.search {
-    height: 20px;
-    float: right;
-    margin: 0 auto;
-}
-
-.button {
-    margin-top: 8px;
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    border: 1px solid rgba(27, 31, 35, 0.2);
-    width: 248px;
-    background-color: #269f42;
-    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
-    border-radius: 0.25em;
+#venta {
+    background-image: linear-gradient(rgba(230, 3, 3, 0.5), rgba(224, 206, 206, 0.5));
+    padding: 20px;
     text-align: center;
 }
 
-.foot {
-    margin-top: 20px;
-    width: 100%;
-    height: 100px;
+#venta img{
+    max-height: 300px;
+    border-radius: 50px;
+    max-width: 80%;
 }
 
-.foot_center {
-    width: 310px;
-    height: 90px;
-    margin: 0 auto;
-    background-color: #F9F9F9;
+#venta .productoMuestra{
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(71, 52, 52, 0.9));
 }
 
-.foot_top {
-    width: 310px;
-    height: 70px;
-    background-color: #F9F9F9;
-    color: #0366D6;
-    border: 1px solid #D8DEE2;
-    border-radius: 0.25em;
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.word1 {
-    width: 150px;
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+
+#nuestros-programas {
+    background-color: rgb(30, 30, 30);
+    color: white;
     text-align: center;
-    color: #D8DEE2;
-    margin-top: 10px;
+
 }
 
-.word2 {
-    width: 150px;
+#nuestros-programas .contenedor {
+    padding: 150px 12px;
+    
+}
+
+#nuestros-programas .contenedor-categorias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: green;
+}
+
+#nuestros-programas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p {
+    display: none;
+}
+
+#nuestros-programas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.categoriasProducto:first-child {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/front-end.jpg");
+}
+
+.categoriasProducto:nth-child(2) {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/full-stack.jpg");
+}
+
+.categoriasProducto:nth-child(3) {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/python.jpg");
+}
+
+.categoriasProducto:nth-child(4) {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/python.jpg");
+}
+
+#caracteristicas .contenedor {
     text-align: center;
-    color: aqua;
-    margin-top: 15px;
-    font-size: 14px;
-    font-weight: 700;
-    margin-right: -10px;
+    padding: 250px 12px;
 }
 
-.foot_tail {
-    width: 310px;
-    height: 30px;
-    background-color: #F9F9F9;
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0 auto;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
 }
 
-.foot_word {
-    margin-top: 20px;
-    width: 310px;
-    height: 30px;
-    text-align: center;
-    font-size: 16px;
+#final h2 {
+    font-size: 9vw;
 }
 
-a {
-    color: blue;
-    text-decoration: none;
+#final button {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .contenedor {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
