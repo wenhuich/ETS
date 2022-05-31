@@ -73,11 +73,11 @@ button:hover {
     color: blueviolet;
 }
 
-#header {
+header {
     background-color: rgb(245, 245, 245);
 }
 
-#header .logo {
+header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
@@ -85,27 +85,27 @@ button:hover {
     font-size: 1.6em;
 }
 
-#header .contenedor {
+header .contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#header nav {
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
 
-#header a {
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-#header a:hover {
+header a:hover {
     color: blueviolet;
 }
 
@@ -126,26 +126,28 @@ button:hover {
     margin: 20px;
     padding: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(71, 52, 52, 0.9));
+    max-width: 80%;
 }
 
-#hero {
+
+hero {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/hero.jpg");
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/home/compraCompara.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#hero h1 {
+hero h1 {
     color: white;
 }
 
-#hero button {
+hero button {
     font-size: 1.75em;
 }
 
@@ -186,19 +188,23 @@ button:hover {
 }
 
 .categoriasProducto:first-child {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/front-end.jpg");
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/home/ratones.PNG");
 }
 
 .categoriasProducto:nth-child(2) {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/full-stack.jpg");
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/home/teclados.PNG");
 }
 
 .categoriasProducto:nth-child(3) {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/python.jpg");
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imagenes/home/cascos.PNG");
 }
 
 .categoriasProducto:nth-child(4) {
-    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/python.jpg");
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+#categoriasProducto img{
+    max-width: 80%;
 }
 
 #caracteristicas .contenedor {
@@ -218,7 +224,7 @@ button:hover {
     align-items: center;
     text-align: center;
     background-color: rgb(30, 30, 30);
-    color: white;
+    color: rgb(255, 253, 253);
     height: 80vh;
 }
 
